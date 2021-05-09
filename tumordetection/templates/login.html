@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Login</title>
+  <meta content="" name="description">
+
+  <meta content="" name="keywords">
+ <!-- Custom styles for this template -->
+  <link href="{% static 'css/signin.css' %}" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body class="text-center" style="background-image: url('image/bg.png');background-size: 900px;">
+
+  {% include 'nav.html' %}
+
+  <section id="Register">
+  <div class="container">
+  <form class="form-signin" method="POST">
+    {% csrf_token %}
+  <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+  <label for="inputusername" class="sr-only"></label>
+  <input type="username" id="inputusername" class="form-control" placeholder="UserName" required autofocus name="username">
+  <br>
+  <label for="inputPassword" class="sr-only"></label>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name="password">
+  <p id="check" style="color:red;" hidden>Invalid Password</p>
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+ <a href ="service.html">
+  <button class="btn btn-lg btn-primary" type="submit">Login</button>
+ </a>
+  <p>Don't have an account?<a href="/signup/" target="_blank">Register here</a></p>
+</form>
+</div>
+</section>
+
+  {% include 'footer.html' %}
+
+</body>
+</html>

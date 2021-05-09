@@ -1,0 +1,32 @@
+{% load static %} 
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <img src="{% static 'assets/img/logo.png' %}" alt="">
+        <span>JAMS Care</span>
+      </a>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto" href="/">Home</a></li>
+        <li><a class="nav-link scrollto" href="/#services">About</a></li>
+
+        <li><a class="nav-link scrollto " href="{% url 'services' %}">Services</a></li>
+
+        <li><a class="nav-link scrollto" href="/#team">Team</a></li>
+
+        {% if user.is_authenticated %}
+                <li><a class="getstarted scrollto" href="{% url 'logout' %}">Log Out</a></li>
+        {% else %}
+                <li><a class="getstarted scrollto" href="{% url 'login' %}">Log In</a></li>
+        {% endif %}
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+
+
+    </div>
+</header>
+  <!-- End Header -->

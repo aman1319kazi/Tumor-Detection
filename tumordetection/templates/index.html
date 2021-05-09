@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>JAMS</title>
+  
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/signin.css'%}">
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+  
+  
+  <meta content="" name="description">
+
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+   <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon"> 
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+      {% include 'nav.html' %}
+
+  <!-- ======= Intro Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">We Are Here For Your Care</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">There is a 'can' in <b style="color:#F48FB1 ; font-weight:bold; font-style:italic;">Can</b>cer because we CAN beat it!</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="{% url 'signup' %}" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Register</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="{% static 'assets/img/hero-img.png' %}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Intro Section -->
+
+ 
+
+    <!-- ======= About Section ======= -->
+    <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>About Brain tumour</h2>
+          <p>different types of brain tumors</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Astrocytomas</h3>
+              <p>Astrocytomas, which are the most common CNS tumor, arise anywhere in the brain or spinal cord, and develop from small, star-shaped cells called astrocytes. In adults, astrocytomas most often occur in the cerebrum, the largest part of the brain. </p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Glioblastoma multiforme</h3>
+              <p> also known as glioblastoma, GBM or grade IV astrocytoma, is a fast-growing, aggressive type of CNS tumor that forms on the supportive tissue of the brain. Glioblastoma is the most common grade IV brain cancer. </p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Meningioma</h3>
+              <p>Meningioma develop in the cells of the membrane that surround the brain and spinal cord. Meningiomas (also called meningeal tumors) account for approximately 15 percent of all intracranial tumors. Most of these tumors are benign (non-cancerous and slow-growing). Meningiomas are typically removed with surgery. </p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-box red">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Ependymomas,</h3>
+              <p>Ependymomas, which usually occur in the lining of the ventricles, or spaces in the brain and around the spinal cord. Although ependymomas may develop at any age, these brain cancer tumors are most common in children and adolescents. Ependymomas are also a common spinal cord tumor.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box purple">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Oligodendrogliomas. </h3>
+              <p> These form in the cells that make the covering that protects nerves. They’re usually grade 1, 2, or 3. They usually grow slowly and don't spread.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-box pink">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Mixed gliomas.</h3>
+              <p>These are made up of more than one type of cell. They can include oligodendrocytes, astrocytes, and ependymal cells.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Team</h2>
+          <p>Our hard working team</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/aman.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Aman Kazi</h4>
+                <span>Backend devloper</span>
+                <p>I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/misbah.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Misbah Shaikh</h4>
+                <span>Frontend devloper</span>
+                <p>My expertise as a frontend developer is in the area of responsive design, with every line of code. I strive to make the web a beautiful place.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/janvi.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Janvi Karia</h4>
+                <span>Backend devloper</span>
+                <p>A back-end web developer is responsible for server-side web application logic and integration of the work front-end developers do.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/salwa.png'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Salwa Tisekar</h4>
+                <span>Backend developer</span>
+                <p>As a Back-end developer really love programming. Fast learner, hard worker and team player who is proficient in an array of scripting languages and multimedia Web tools.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Team Section -->
+
+
+    
+  </main><!-- End #main -->
+
+  {% include 'footer.html' %}
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
